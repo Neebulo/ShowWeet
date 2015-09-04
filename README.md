@@ -33,10 +33,10 @@ Audience will be able to:
 
 ##### WIREFRAME
 | Front Page View Shows created Events            | Page View when an 'enter event' clicked   |
-| --------------------------------------------    |:-----------------------------------------:|
+|:-----------------------------------------------:|:-----------------------------------------:|
 | ![ShowWeet_Front](http://gph.to/1Oiwvkz)        |![ShowWeet_In_Event](http://gph.to/1PQHKkM)|
 |                                                 |                                           |
-| Page View when a 'discuss' button is clicked    | Login View                  |  
+| Page View when a 'discuss' button is clicked    | Login View                                |  
 | ![ShowWeet_In_Single_App](http://gph.to/1hIjzKe)| ![ShowWeet_Login](http://gph.to/1KvPDy0)  |
 
 ----
