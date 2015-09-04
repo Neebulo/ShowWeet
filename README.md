@@ -15,7 +15,6 @@ Owner will be able to:
 - sign up and log in
 - create an event
 - within event, list or create the showcases
--
 
 Owner of the event will be the only one able to edit and delete event items
 
@@ -33,12 +32,12 @@ Audience will be able to:
 * BootStrap
 
 ##### WIREFRAME
-| Front Page View Shows created Events        | Page View when an 'enter event' clicked   |
-| --------------------------------------------|:-----------------------------------------:|
-| ![ShowWeet_Front](http://gph.to/1Oiwvkz)    |![ShowWeet_In_Event](http://gph.to/1PQHKkM)|
-|                                             |                                           |
-| Page View when a 'discuss' button is clicked| Navigation View                           |  
-| ![shot_3](http://gph.to/1gPv41T)            | ![shot_4](http://gph.to/1MwLgCL)          |
+| Front Page View Shows created Events            | Page View when an 'enter event' clicked   |
+| --------------------------------------------    |:-----------------------------------------:|
+| ![ShowWeet_Front](http://gph.to/1Oiwvkz)        |![ShowWeet_In_Event](http://gph.to/1PQHKkM)|
+|                                                 |                                           |
+| Page View when a 'discuss' button is clicked    | Login View                  |  
+| ![ShowWeet_In_Single_App](http://gph.to/1hIjzKe)| ![ShowWeet_Login](http://gph.to/1KvPDy0)  |
 
 ----
 
