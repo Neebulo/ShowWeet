@@ -44,3 +44,7 @@ Audience will be able to:
 ## Customer Groups
 - Showcase event
 - any event that desires reviews on the execution of the event
+
+## Planned Developments
+- incorporate sms messaging
+- Twitter authentication
