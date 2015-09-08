@@ -7,3 +7,9 @@
 meteor-platform
 autopublish
 insecure
+iron:router
+twbs:bootstrap
+natestrauser:font-awesome
+accounts-password
+ian:accounts-ui-bootstrap-3
+sjors:meteor-masonry
