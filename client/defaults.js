@@ -1,0 +1,2 @@
+
+Session.setDefault('category', null);
