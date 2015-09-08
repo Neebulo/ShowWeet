@@ -1,3 +1,4 @@
+// dummy data for Posts collection
 if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescope',
