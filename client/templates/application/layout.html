@@ -1,11 +1,15 @@
 <!-- this is the front page layout -->
 <template name="layout">
   <div class="container">
-    <header class="navbar navbar-default" role="navigation">
+    {{> header}}
+
+    <!-- replaced with header.html template -->
+    <!-- <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <a class="navbar-brand" href="{{pathFor 'postsList'}}">ShowWeet</a>
       </div>
-    </header>
+    </header> -->
+    
     <div id="main">
       {{> yield}}
     </div>
