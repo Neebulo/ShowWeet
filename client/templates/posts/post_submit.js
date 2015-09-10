@@ -1,3 +1,19 @@
+//validate contents of post on submit
+Template.postSubmit.onCreated(function() {
+  Session.set('postSubmitErrors', {});
+});
+
+Template.postSubmit.helpers({
+  errorMessage: function(field) {
+    return Session.get('postSubmitErrors')[field];
+  },
+  errorClass: function (field) {
+    return !!Session.get('postSubmitErrors')[field] ? 'has-error' : '';
+  }
+});
+
+
+
 // function that happens at button click of submit post
 // creates a new post with a post._id and places it on post_page.html
 Template.postSubmit.events({
@@ -9,6 +25,12 @@ Template.postSubmit.events({
       title: $(e.target).find('[name=title]').val(),
       description: $(e.target).find('[name=description]').val()
     };
+
+    //validate contents of post on submit
+    var errors = validatePost(post);
+    if (errors.title || errors.url || errors.description)
+      return Session.set('postSubmitErrors', errors);
+
     //unique post insert to postPage
     Meteor.call('postInsert', post, function(error, result) {
       // display the error to the user and abort
