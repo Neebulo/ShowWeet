@@ -6,7 +6,8 @@ Template.postSubmit.events({
 // post will have an url and title
     var post = {
       url: $(e.target).find('[name=url]').val(),
-      title: $(e.target).find('[name=title]').val()
+      title: $(e.target).find('[name=title]').val(),
+      description: $(e.target).find('[name=description]').val()
     };
     //unique post insert to postPage
     Meteor.call('postInsert', post, function(error, result) {
