@@ -11,8 +11,12 @@ Meteor.publish('comments', function(postId) {
 
 //post notifications server side
 Meteor.publish('notifications', function() {
-  return Notifications.find();
-})
+
+  /** replaced for sync relevent to user
+  //return Notifications.find();
+  **/
+  return Notifications.find({userId: this.userId, read: false});
+});
 
 /** refactored for comments publish
 Meteor.publish('comments', function() {
