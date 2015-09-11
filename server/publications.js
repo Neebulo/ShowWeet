@@ -9,6 +9,11 @@ Meteor.publish('comments', function(postId) {
   return Comments.find({postId: postId});
 });
 
+//post notifications server side
+Meteor.publish('notifications', function() {
+  return Notifications.find();
+})
+
 /** refactored for comments publish
 Meteor.publish('comments', function() {
   return Comments.find();
