@@ -8,9 +8,5 @@ Template.postItem.helpers({
     var a = document.createElement('a');
     a.href = this.url;
     return a.hostname;
-  },
-  // function helper to display comment count for each post
-commentsCount: function() {
-    return Comments.find({postId: this._id}).count();
   }
 });
