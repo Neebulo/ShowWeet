@@ -1,3 +1,8 @@
+#upvote {
+  width:68px;
+  height:60px;
+  border-radius: 26%;
+}
 .grid-block, .main, .post, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
