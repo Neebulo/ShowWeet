@@ -4,5 +4,16 @@
     {{#each posts}}
       {{> postItem}}
     {{/each}}
+
+<!--step through posts  -->
+    {{#if nextPath}}
+      <a class="load-more" href="{{nextPath}}">Load more</a>
+      <!-- pagination spinner -->
+    {{else}}
+      {{#unless ready}}
+        {{> spinner}}
+      {{/unless}}
+
+    {{/if}}
   </div>
 </template>
