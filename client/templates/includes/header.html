@@ -16,14 +16,14 @@
         <!-- replaced requireLogin access_denied with current_user -->
         <!-- <li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li> -->
         <!-- links to New and Most Voted -->
-        <li>
+        <li class="{{activeRouteClass 'home' 'newPosts'}}">
           <a href="{{pathFor 'newPosts'}}">New</a>
         </li>
-        <li>
+        <li class="{{activeRouteClass  'bestPosts'}}">
           <a href="{{pathFor 'bestPosts'}}">Most Voted</a>
         </li>
         {{#if currentUser}}
-        <li>
+        <li class="{{activeRouteClass 'postSubmit'}}">
           <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
         </li>
         <!-- notifications display tab -->
