@@ -12,6 +12,11 @@ Meteor.publish('posts', function() {
   return Posts.find();
 });
 */
+// added for single post subscription
+Meteor.publish('singlePost', function(id) {
+  check(id, String);
+  return Posts.find(id);
+});
 
 //post comments on server side (comment relate to a post)
 Meteor.publish('comments', function(postId) {
