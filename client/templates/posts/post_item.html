@@ -2,7 +2,7 @@
 <template name="postItem">
   <div class="post">
 <!-- upvote button -->
-    <img id='upvote' class="upvote btn btn-default" src="http://gph.to/1KUm0QW">
+    <img id='upvote' class="upvote btn btn-default {{upvotedClass}}" src="http://gph.to/1KUm0QW">
     <div class="post-content">
       <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
       <h5>{{description}}</h5>
