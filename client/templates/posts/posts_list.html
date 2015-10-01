@@ -1,9 +1,11 @@
 <!-- template for show all posts  -->
 <template name="postsList">
   <div class="posts page">
-    {{#each posts}}
-      {{> postItem}}
-    {{/each}}
+    <div class="wrapper">
+          {{#each posts}}
+            {{> postItem}}
+          {{/each}}
+        </div>
 
 <!--step through posts  -->
     {{#if nextPath}}
